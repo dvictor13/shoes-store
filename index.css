@@ -18,7 +18,7 @@ button{
     text-decoration: none;
 }
 
-h1,h2,h3,h4,p{
+h1,h2,h3,h4,p,label{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
@@ -66,7 +66,7 @@ navbar{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .navbar .menubar h2{
@@ -89,7 +89,7 @@ navbar{
         width: auto;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
+        gap: 100px;
     }
 
     .menubar h2{
@@ -348,9 +348,119 @@ banner{
         background-size: cover;
         min-height: 650px;
     }
-
 }
 
+/* form-text */
+
+.apresenta-formulario{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apresenta-formulario .title-form{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    color: var(--cinza);
+    padding: 20px;
+    text-align: center;
+}
+
+.apresenta-formulario .form-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: .8rem;
+    line-height: .9rem;
+    color: var(--cinza);
+}
+
+@media screen and (min-width:375px){
+    .apresenta-formulario .form-text{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:678px){
+    .apresenta-formulario .form-text{
+        max-width: 900px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+}
+
+.apresenta-formulario .form-text .form-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--cinza);
+    font-size: .9rem;
+    line-height: .9rem;
+}
+
+.apresenta-formulario .form-text .form-container label{
+    margin-bottom: 2px;
+}
+
+.apresenta-formulario .form-text .form-container input{
+    margin-bottom: 10px;
+}
+
+.apresenta-formulario .form-text .form-container select{
+    margin-bottom: 10px;
+}
+
+.apresenta-formulario .form-text .form-container .selector{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.apresenta-formulario .form-text .form-container .selectradio{
+    display: flex;
+    width: 100%;
+}
+
+.apresenta-formulario .form-text .form-container .selectradio label{
+    margin-right: 10px;
+}
+
+.apresenta-formulario .form-text .form-container p{
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 5px;
+    margin-left: 0px;
+}
+
+.apresenta-formulario .form-text .text-container{
+    width: 100%;
+    order: -1;
+}
+
+.apresenta-formulario .form-text .text-container .paragraph{
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+.apresenta-formulario .form-container .btn{
+    background: var(--bordo);
+    color: var(--branco);
+    padding: 5px;
+    border: 0;
+}
+
+
+@media screen and (min-width:375px){
+    .apresenta-formulario .form-text .text-container{
+        order: 1;
+    }
+}
 /*footer*/
 
 .container-footer{

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./img/logo-color.png">
+            <menu class="menubar">
+                <h2>Todos os produtos</h2>
+                <h2>Coleções</h2>
+                <h2>Outlet</h2>
+            </menu>
+        </nav>
+
+        <!--<banner class="hero">
+        </banner>-->
+    </header>
+    <main>
+        <section class="apresenta-formulario" action="/registro" method="POST">
+            <h1 class="title-form">Faça parte do nosso time</h1>
+            <div class="form-text">
+                <form class="form-container">
+                        <label for="nome" >Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu Email" required> 
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" placeholder="Digite seu telefone" required> 
+                        <label for="text">Departamentos:</label>
+                        <select name="departamentos" id="departamentos"  required>
+                            <option selected disabled>Selecione</option>
+                            <option value="administrativo">Administrativo</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="rh">Recursos Humanos</option>
+                        </select>
+                    <p>
+                        <label for="disponibilidade">Disponibilidade:</label>
+                    </p>
+
+                    <p class="selector">
+                        <input type="checkbox" name="disponibilidade" value="integral"><label for="integral">Integral (8h)</label>
+                    </p>
+                    <p class="selector">
+                        <input type="checkbox" name="disponibilidade" value="meioperiodo"><label for="meioperiodo">Meio período (4h)</label>
+                    </p>
+                    <p class="selector">
+                        <input type="checkbox" name="disponibilidade" value="freelancer"><label for="freelancer">Freelancer</label>
+                    </p>
+                    <p>
+                        <label id="contato">Qual a melhor forma para entrarmos em contato com você?</label>
+                    </p>
+                    <p class="selectradio">
+                        <input type="radio" name="contato" value="email"><label for="email">Email</label>
+                        <input type="radio" name="contato" value="ligacao"><label for="ligacao">Ligação</label>
+                        <input type="radio" name="contato" value="whatsapp" checked><label for="whatsapp">Whatsapp</label>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem</label>
+                    </p>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="4"></textarea>
+
+                    <p>
+                        <label for="vitae">Currículo</label>
+                        <button class="btn" type="file" name="vitae" accept=".pdf">upload</button>
+
+                    </p>
+
+
+                    
+                    <button class="btn">enviar</button>
+
+                </form>
+                <div class="text-container">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deleniti, repellat ducimus et omnis accusamus quae libero doloribus a praesentium placeat debitis voluptate officiis architecto perspiciatis veritatis accusantium quaerat, dolor magni ut quam. </p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deleniti, repellat ducimus et omnis accusamus quae libero doloribus a praesentium placeat debitis voluptate officiis architecto perspiciatis veritatis accusantium quaerat, dolor magni ut quam. </p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deleniti, repellat ducimus et omnis accusamus quae libero doloribus a praesentium placeat debitis voluptate officiis architecto perspiciatis veritatis accusantium quaerat, dolor magni ut quam. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-footer">
+        <div class="logo-footer">
+            <img src="./img/logo-white.png">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dolorem impedit quos sapiente culpa cupiditate aliquam corrupti, nesciunt earum dolor.</p>
+        </div>
+        <div class="menu-footer">
+            <div class="menu">
+                <h3>categorias</h3>
+                <h4>sandálias</h4>
+                <h4>botas</h4>
+                <h4>tênis</h4>
+                <h4>oxford</h4>
+                <h4>coturnos</h4>
+            </div>
+            <div class="menu">
+                <h3>institucional</h3>
+                <h4>sobre nós</h4>
+                <h4>perguntas frequentes</h4>
+                <h4>política de privacidade</h4>
+                <h4>rastreamento de pedidos</h4>
+                <h4>trabalhe-conosco</h4>
+                <h4>contato</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
